@@ -1,16 +1,35 @@
+:root {
+    --cream: #fffcf0;
+    --gold: #d8ab5b;
+}
+
 html {
     box-sizing: border-box;
-    font-family: "Dongle", sans-serif;
+    font-family: "DM Serif Text", serif;
     font-size: 2.15rem;
     font-weight: 400;
     font-style: normal;
     line-height: 125%;
-    color:rgb(122, 60, 19);
+    color:var(--gold);
+    background-color: var(--cream);
     }
 
+    .dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 nav {
-        background-color:antiquewhite;
-        text-align: center;
+    text-align: center;
+     
+        
 }
 
 nav li {
@@ -20,7 +39,7 @@ nav li {
 nav a {
     padding: 20px;
     display: inline-block;
-    color: rgb(214, 182, 111);
+    color: var(--gold);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -34,12 +53,43 @@ nav a:visited {
 
 nav a:hover,
 nav a:active {
-    background-color:antiquewhite;
-    color: rgb(214, 182, 111);
+    color: var(--gold);
     text-decoration: underline;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
 
+.morework, 
+.morework a:visited {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 40px 20px;
+    margin-left: 800px;
+    margin-right: 800px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    
+}
+
+ .morework a:link {
+    text-decoration: none;
+}
+
+.morework a:hover {
+    color: var(--cream);
+    background-color: var(--gold);
+    
+}
+
+
+footer {
+    font-size: small;
+    text-align:center;
+    line-height: normal;
+}
 
 
 /* come back when you learn java script
