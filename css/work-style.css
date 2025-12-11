@@ -66,8 +66,9 @@ h1 {
 }
 
 .gallery {
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 400px;
+  margin-right: 400px;
+  
 }
 
 .row {
@@ -79,7 +80,7 @@ h1 {
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
-  max-width: 25%;
+  max-width: 50%;
   padding: 0 4px;
 }
 

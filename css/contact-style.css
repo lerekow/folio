@@ -63,8 +63,30 @@ h1, h2, h3 {
     text-align: left;
 }
 
+.submit {
+    border-width: 1px;
+    padding: 15px 30px 20px;
+    font-size: 30px;
+    font-family: "DM Serif Text", serif;
+    color: var(--gold);
+    border-color: var(--gold);
+    background-color: var(--cream);
+   
+}
+
+/*not working */
+.submit a:hover {
+    color: var(--cream);
+    background-color: var(--gold);
+}
+
 footer {
     font-size: small;
     text-align:center;
     line-height: normal;
+}
+
+footer a:visited,
+footer a:link {
+    color: var(--gold)
 }
