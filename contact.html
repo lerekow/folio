@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/contact-style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Rekow | Contact Me</title>
 </head>
 <body>
 
-     <nav>
+        <div class="navbox">
+    <nav>
         <ul>
             <li> <a href="/index.html">Home</a></li>
             <li> <a href="/work.html">Work</a></li>
             <li> <a href="/about.html">About</a></li>
             <li> <a href="/contact.html">Contact</a></li>
         </ul>
+         
+        <div class="line"></div>
+
     </nav>
+    </div>
 
     <header>
         <h1>Contact Me</h1>
@@ -28,8 +33,10 @@
     <section class: contactform>
         <form id="email-form" class="form" name="email form" method="get">
 
+        <div class="row">
+        <div class="column">
             <div class:name>
-                <label for="name">Name</label>
+                <label for="name">Name:</label>
                 <input id="name" type="text" name="name" required>
             </div>
 
@@ -37,17 +44,26 @@
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
             </div>
+        </div>
 
+        <div class="column">
             <div class:phone>
                 <label for="phone">Phone:</label>
                 <input type="tel" name="phone" id="phone" required>
             </div>
 
+            <div class:subject>
+                <lable for="subject">Subject:</lable>
+                <input type="text" name="subject" id="subject" required>
+            </div>
+        </div>
+        </div>
+
             <div class:comment>
-                <label for="comment">Comment</label>
+                <label for="comment">Comment:</label>
                 <input type="text" name="comment" id="comment" required>
             </div>
-
+            
             <input type="submit" class="submit" value="Submit">
 
 

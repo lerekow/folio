@@ -1,6 +1,9 @@
 :root {
     --cream: #fffcf0;
     --gold: #d8ab5b;
+    --offwhite: #fffdf7;
+    --title: "DM Serif Text", serif;
+    --body: "Lato", sans-serif;
 }
 
 html {
@@ -28,10 +31,85 @@ html {
   font-style: italic;
 }
 
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
 nav {
-    text-align: center;
-     
-        
+    font-family: "DM Serif Text", serif;
+    text-align: center;       
+}
+
+.navbox {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  background-color: var(--cream);
+  
 }
 
 nav li {
@@ -49,6 +127,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
+    font-family: "DM Serif Text", serif;
     text-decoration: none;
 
 }
@@ -59,8 +138,71 @@ nav a:active {
     text-decoration: underline;
 }
 
+.line {
+  width: 1500px;
+  height:1px;
+  background-color: var(--gold);
+  display: flex;
+  margin-left:0px;
+  justify-content: center;
+  
+}
+
+body {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
 h1, h2, h3 {
     text-align: left;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+
+label, .subject {
+    display: flex;
+}
+
+input {
+    border: 1px solid var(--gold);
+    background-color: var(--offwhite);
+    height: 50px;
+    width: 700px;
+    max-height: 50px;
+    margin-bottom: 40px;
+}
+
+.name, .phone, .email, .subject {
+    border: 1px solid var(--gold);
+    background-color: var(--offwhite);
+    height: 50px;
+    width: 700px;
+    max-height: 50px;
+    margin-bottom: 40px;
+}
+
+/*trying to make comment wider than the others but they only respond to input */
+.comment {
+    border: 1px solid var(--gold);
+    background-color: var(--offwhite);
+    height: 50px;
+    width: 700px;
+    max-height: 50px;
+    margin-bottom: 40px;
+
 }
 
 .submit {
@@ -68,10 +210,12 @@ h1, h2, h3 {
     padding: 15px 30px 20px;
     font-size: 30px;
     font-family: "DM Serif Text", serif;
+    text-transform: capitalize;
+    line-height: 18px;
     color: var(--gold);
     border-color: var(--gold);
     background-color: var(--cream);
-   
+    max-width:200px;
 }
 
 /*not working */

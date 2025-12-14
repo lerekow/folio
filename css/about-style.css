@@ -1,6 +1,8 @@
 :root {
     --cream: #fffcf0;
     --gold: #d8ab5b;
+    --title: "DM Serif Text", serif;
+    --body: "Lato", sans-serif;
 }
 
 html {
@@ -28,16 +30,85 @@ html {
   font-style: italic;
 }
 
-.faculty-glyphic-regular {
-  font-family: "Faculty Glyphic", sans-serif;
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
 nav {
-    text-align: center;
-     
-        
+    font-family: "DM Serif Text", serif;
+    text-align: center;       
+}
+
+.navbox {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  background-color: var(--cream);
+  
 }
 
 nav li {
@@ -55,6 +126,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
+    font-family: "DM Serif Text", serif;
     text-decoration: none;
 
 }
@@ -63,6 +135,16 @@ nav a:hover,
 nav a:active {
     color: var(--gold);
     text-decoration: underline;
+}
+
+.line {
+  width: 1500px;
+  height:1px;
+  background-color: var(--gold);
+  display: flex;
+  margin-left:0px;
+  justify-content: center;
+  
 }
 
 h1, h2 {
@@ -74,9 +156,35 @@ h2 {
     font-size: 25px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 75%;
+}
+
+p {
+    font-family: var(--body);
+}
 
 footer {
     font-size: small;
     text-align:center;
     line-height: normal;
+}
+
+footer a:visited,
+footer a:link {
+    color: var(--gold)
 }

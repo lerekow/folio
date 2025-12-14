@@ -1,6 +1,8 @@
 :root {
     --cream: #fffcf0;
     --gold: #d8ab5b;
+    --title: "DM Serif Text", serif;
+    --body: "Lato", sans-serif;
 }
 
 html {
@@ -26,10 +28,85 @@ html {
   font-style: italic;
 }
 
+.didact-gothic-regular {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
 nav {
-    text-align: center;
-     
-        
+    font-family: "DM Serif Text", serif;
+    text-align: center;       
+}
+
+.navbox {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  background-color: var(--cream);
+  
 }
 
 nav li {
@@ -47,6 +124,7 @@ nav a {
 
 nav a:link,
 nav a:visited {
+    font-family: "DM Serif Text", serif;
     text-decoration: none;
 
 }
@@ -57,27 +135,93 @@ nav a:active {
     text-decoration: underline;
 }
 
+.line {
+  width: 1500px;
+  height:1px;
+  background-color: var(--gold);
+  display: flex;
+  margin-left:0px;
+  justify-content: center;
+  
+}
+
+/*I don't want to deal with this right now
+img {
+  justify-content: center;
+  display:flex;
+}
+  */
+
 h1, h2, h3 {
     text-align: center;
+    
+}
+
+p {
+  font-family: var(--body);
+}
+
+.carousel {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+img {
+  padding: 5px 20px 40px;
 }
 
 .morework, 
 .morework a:visited {
+    font-family: "DM Serif Text", serif;
     text-align: center;
     text-transform: uppercase;
     padding: 20px 40px 20px;
-    margin-left: 800px;
-    margin-right: 800px;
     border: 1px solid var(--gold);
+    background-color: var(--cream);
     color: var(--gold);
     text-decoration: none;
-    
 }
 
  .morework a:link {
     text-decoration: none;
 }
 
+/*make bg color fit box */
 .morework a:hover {
     color: var(--cream);
     background-color: var(--gold);
@@ -89,6 +233,12 @@ footer {
     font-size: small;
     text-align:center;
     line-height: normal;
+    padding: 40px 0px 0px;
+}
+
+footer a:visited,
+footer a:link {
+    color: var(--gold)
 }
 
 
