@@ -167,6 +167,8 @@ p {
   text-align:center;
 }
 
+/*fun fact! if you scroll fast enough while the fade in animation plays, the nav bar goes transparent. it's like this on every page! idk why this happens!*/
+
 .carousel {
   margin-left: 300px;
   margin-right: 300px;
