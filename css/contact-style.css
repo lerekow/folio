@@ -1,6 +1,6 @@
 :root {
     --cream: #fffcf0;
-    --gold: #d8ab5b;
+    --gold: #ce9c46;
     --offwhite: #fffdf7;
     --title: "DM Serif Text", serif;
     --body: "Lato", sans-serif;
@@ -107,7 +107,8 @@ nav {
 .navbox {
   justify-content: center;
   display: flex;
-  position: relative;
+  position: sticky;
+  top: 0;
   background-color: var(--cream);
   
 }
@@ -155,6 +156,11 @@ body {
 
 h1, h2, h3 {
     text-align: left;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400; 
 }
 
 
@@ -218,8 +224,8 @@ input {
     max-width:200px;
 }
 
-/*not working */
-.submit a:hover {
+
+.submit:hover {
     color: var(--cream);
     background-color: var(--gold);
 }

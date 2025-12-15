@@ -1,6 +1,6 @@
 :root {
     --cream: #fffcf0;
-    --gold: #d8ab5b;
+    --gold: #ce9c46;
     --title: "DM Serif Text", serif;
     --body: "Lato", sans-serif;
 }
@@ -104,7 +104,8 @@ nav {
 .navbox {
   justify-content: center;
   display: flex;
-  position: relative;
+  position: sticky;
+  top: 0;
   background-color: var(--cream);
   
 }
@@ -159,11 +160,13 @@ h1, h2, h3 {
 
 p {
   font-family: var(--body);
+  font-size: 16px;
+  text-align:center;
 }
 
 .carousel {
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .row {
@@ -201,9 +204,6 @@ p {
   }
 }
 
-img {
-  padding: 5px 20px 40px;
-}
 
 .morework, 
 .morework a:visited {
@@ -221,12 +221,15 @@ img {
     text-decoration: none;
 }
 
-/*make bg color fit box */
-.morework a:hover {
-    color: var(--cream);
+/*text color doesn't show? */
+.morework:hover {
     background-color: var(--gold);
-    
 }
+
+.morework:hover a{
+  color: var(--cream);
+}
+
 
 
 footer {
@@ -240,6 +243,38 @@ footer a:visited,
 footer a:link {
     color: var(--gold)
 }
+
+.top,
+.top a:visited {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    background-color: var(--cream);
+    font-family: "Lato", sans-serif;
+    font-weight:300;
+    font-size: 110px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+
+.top a:link {
+     text-decoration: none;
+}
+
+
+/*text color doesn't show still */
+.top:hover {
+    background-color: var(--gold);
+}
+
+.top:hover a {
+  color: var(--cream);
+}
+
+
 
 
 /* come back when you learn java script
