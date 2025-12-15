@@ -5,6 +5,9 @@
     --body: "Lato", sans-serif;
 }
 
+/*the color palette was based on my personal logo but it wouldn't cooperate so consider it vestigial.
+also this site is NOT optimised for mobile in the slightest. It looks best at a minimum screen width of 1030px*/
+
 html {
     box-sizing: border-box;
     font-family: "DM Serif Text", serif;
@@ -146,7 +149,7 @@ nav a:active {
   
 }
 
-/*I don't want to deal with this right now
+/*I don't want to deal with this right now (this is the logo)
 img {
   justify-content: center;
   display:flex;
@@ -167,7 +170,21 @@ p {
 .carousel {
   margin-left: 300px;
   margin-right: 300px;
+  animation-duration: 1s;
+  animation-name: fade-in;
+  animation-timing-function: ease-in;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .row {
   display: flex;

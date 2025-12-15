@@ -173,6 +173,19 @@ p {
 .contentbox {
     width: auto;
     height: 800px;
+    animation-duration: 1s;
+    animation-name: fade-in;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .top,
